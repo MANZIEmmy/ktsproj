@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="index" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Sign up button -->
+    <button onclick="location.href='signup.html'">If don't have account Please!!! Sign Up</button>
+
+    <script>
+        // Add an event listener for form submission
+        document.getElementById("index").addEventListener("submit", function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get form data
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Perform validation (You should implement server-side validation as well)
+            // For demonstration purposes, I'm assuming the credentials are valid
+            var validEmail = "test@example.com"; // Example valid email
+            var validPassword = "password"; // Example valid password
+
+            if (email === validEmail && password === validPassword) {
+                // Redirect to welcome page
+                // window.location.href = "welcome.html";
+            } else {
+                // Display error message or handle invalid credentials
+                alert("Invalid email or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
