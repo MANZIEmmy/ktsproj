@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color:gray;
+    
+}
+.nav ul{
+    margin-left: 500px;
+    display: flex;
+}
+.nav li{
+    list-style: none;
+}
+.nav a{
+    margin: 40px;
+    text-decoration: none;
+    color: bisque;
+}
+.nav form{
+    margin-left: 1200px;
+    margin-top: -15px;
+}
+.para{
+    background-color: beige;
+    height: 750px;
+
+}
+.para h1{
+    width: 500px;
+    font-size: 50px;
+    margin-left: 100px;
+    padding: 100px;
+}
+.para img{
+    margin-left: 700px;
+    margin-top: -500px;
+
+}
+.para button{
+    background-color: cadetblue;
+    color: aliceblue;
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    margin-left: -800px;
+}
+.para button:hover{
+    background-color: brown;
+}
